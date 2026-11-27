@@ -3,8 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MedicAura Global — International Healthcare Jobs & Smart License Vault</title>
-    <link rel="icon" type="image/png" href="logo.png" />
+  <title>MedicAura Global — International Healthcare Jobs &amp; Smart License Vault</title>
+
+  <!-- Pro SEO Meta Tags -->
+  <meta name="description" content="Discover verified international healthcare jobs across Saudi Arabia, UAE, UK, Canada &amp; Europe. Track Nursing, ACLS &amp; BLS license expiries with AI eligibility checks in MedicAura Global." />
+  <meta name="keywords" content="international healthcare jobs, nursing jobs abroad, gulf nursing jobs, SCFHS, DHA, MOH, Prometric, UK NMC, medical license tracker, MedicAura Global" />
+  <meta name="author" content="MedicAura Global" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://medicauraglobal.com/" />
+  <link rel="icon" type="image/png" href="logo.png" />
+
+  <!-- Open Graph (WhatsApp & Facebook Share Preview Card) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MedicAura Global" />
+  <meta property="og:url" content="https://medicauraglobal.com/" />
+  <meta property="og:title" content="MedicAura Global — International Healthcare Jobs &amp; Smart License Vault" />
+  <meta property="og:description" content="Verified global healthcare vacancies, 9-language licensing guides, AI eligibility checker &amp; automatic expiry alerts — built for Nurses, Doctors &amp; Medical Professionals." />
+  <meta property="og:image" content="https://medicauraglobal.com/logo.png" />
+  <meta property="og:image:alt" content="MedicAura Global Official Logo" />
+
+  <!-- Twitter / X Preview Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MedicAura Global — International Healthcare Jobs &amp; Smart License Vault" />
+  <meta name="twitter:description" content="Verified international healthcare vacancies, smart document vault &amp; AI eligibility checker — Coming Soon on Google Play." />
+  <meta name="twitter:image" content="https://medicauraglobal.com/logo.png" />
+
+  <!-- Google Schema (Organization + Official Social Profiles) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MedicAura Global",
+    "url": "https://medicauraglobal.com/",
+    "logo": "https://medicauraglobal.com/logo.png",
+    "description": "International healthcare jobs platform, multilingual licensing roadmaps, AI eligibility checker, and smart license expiry vault for nurses, doctors, and healthcare professionals.",
+    "email": "support@medicauraglobal.com",
+    "sameAs": [
+      "https://www.facebook.com/medicauraglobal",
+      "https://whatsapp.com/channel/0029Vb8qKRN5q08WTWpBsG1b"
+    ]
+  }
+  </script>
+
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
     body { background: #f8fafc; color: #0f172a; line-height: 1.6; }
@@ -12,13 +52,24 @@
     .nav { max-width: 1080px; margin: 0 auto 48px; display: flex; justify-content: space-between; align-items: center; }
     .logo { font-size: 22px; font-weight: 800; letter-spacing: 0.4px; }
     .logo span { color: #38bdf8; }
-    .nav-btn { background: #ffffff; color: #1e3a8a; padding: 10px 18px; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 14px; }
+    .nav-btn { background: #ffffff; color: #1e3a8a; padding: 10px 18px; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 14px; transition: transform 0.2s, background 0.2s; }
+    .nav-btn:hover { background: #e0f2fe; transform: translateY(-1px); }
     .badge { display: inline-block; background: rgba(56, 189, 248, 0.18); border: 1px solid rgba(56, 189, 248, 0.45); color: #e0f2fe; padding: 6px 14px; border-radius: 999px; font-size: 13px; font-weight: 600; margin-bottom: 18px; }
     h1 { max-width: 780px; margin: 0 auto 16px; font-size: 38px; line-height: 1.2; font-weight: 800; }
-    .subtitle { max-width: 660px; margin: 0 auto 30px; font-size: 17px; color: #cbd5e1; }
-    .cta-btn { display: inline-block; background: #22c55e; color: #ffffff; padding: 16px 32px; border-radius: 12px; text-decoration: none; font-size: 17px; font-weight: 700; box-shadow: 0 10px 25px rgba(34, 197, 94, 0.35); transition: transform 0.2s; }
-    .cta-btn:hover { transform: translateY(-2px); background: #16a34a; }
-    .sub-note { margin-top: 12px; font-size: 13px; color: #94a3b8; }
+    .subtitle { max-width: 660px; margin: 0 auto 28px; font-size: 17px; color: #cbd5e1; }
+
+    /* Coming Soon Badge & Social Buttons */
+    .coming-soon-badge { display: inline-flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.3); color: #ffffff; padding: 12px 24px; border-radius: 12px; font-size: 15px; font-weight: 700; letter-spacing: 0.2px; margin-bottom: 18px; backdrop-filter: blur(4px); }
+    .coming-soon-dot { width: 9px; height: 9px; background: #38bdf8; border-radius: 50%; display: inline-block; box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.25); }
+    .social-cta-group { display: flex; justify-content: center; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 4px; }
+    .cta-btn { display: inline-flex; align-items: center; justify-content: center; gap: 9px; color: #ffffff; padding: 14px 26px; border-radius: 12px; text-decoration: none; font-size: 16px; font-weight: 700; transition: transform 0.2s, opacity 0.2s, background 0.2s; }
+    .cta-btn:hover { transform: translateY(-2px); }
+    .btn-whatsapp { background: #22c55e; box-shadow: 0 10px 25px rgba(34, 197, 94, 0.35); }
+    .btn-whatsapp:hover { background: #16a34a; }
+    .btn-facebook { background: #1877f2; box-shadow: 0 10px 25px rgba(24, 119, 242, 0.35); }
+    .btn-facebook:hover { background: #145dbf; }
+    .sub-note { margin-top: 14px; font-size: 13px; color: #94a3b8; }
+
     .container { max-width: 1080px; margin: 0 auto; padding: 56px 20px; }
     .section-title { text-align: center; font-size: 28px; font-weight: 800; margin-bottom: 10px; color: #0f295c; }
     .section-sub { text-align: center; color: #475569; max-width: 620px; margin: 0 auto 40px; }
@@ -33,26 +84,53 @@
     .card p { font-size: 14.5px; color: #475569; }
     .banner { background: #0f295c; color: #ffffff; border-radius: 20px; padding: 40px 24px; text-align: center; margin-top: 48px; }
     .banner h2 { font-size: 26px; margin-bottom: 10px; }
-    .banner p { color: #cbd5e1; max-width: 580px; margin: 0 auto 24px; }
-    footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 32px 20px; font-size: 14px; }
-    footer a { color: #38bdf8; text-decoration: none; margin: 0 10px; }
-    @media (max-width: 600px) { h1 { font-size: 28px; } .nav { flex-direction: column; gap: 14px; } }
+    .banner p { color: #cbd5e1; max-width: 580px; margin: 0 auto 22px; }
+    footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 36px 20px; font-size: 14px; }
+    .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px 18px; margin-top: 12px; }
+    footer a { color: #38bdf8; text-decoration: none; font-weight: 500; }
+    footer a:hover { text-decoration: underline; }
+    .footer-status { display: inline-block; color: #cbd5e1; font-size: 13px; margin-bottom: 8px; }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 28px; }
+      .nav { flex-direction: column; gap: 14px; }
+      .social-cta-group { flex-direction: column; width: 100%; }
+      .cta-btn { width: 100%; max-width: 320px; }
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="nav">
-            <div class="logo" style="display:flex; align-items:center; gap:10px;">
+      <div class="logo" style="display:flex; align-items:center; gap:10px;">
         <img src="logo.png" alt="MedicAura Global Logo" style="width:40px; height:40px; border-radius:10px; object-fit:cover;" />
         MedicAura <span>Global</span>
       </div>
-      <a class="nav-btn" href="https://play.google.com/store/apps/details?id=com.medicaura.global.app" target="_blank">Download App</a>
+      <a class="nav-btn" href="https://whatsapp.com/channel/0029Vb8qKRN5q08WTWpBsG1b" target="_blank" rel="noopener noreferrer">Join Launch Alerts</a>
     </div>
+
     <div class="badge">Built Exclusively for Nurses, Doctors &amp; Healthcare Professionals</div>
     <h1>Your Global Healthcare Career — Protected &amp; Powered by AI</h1>
     <p class="subtitle">Stop chasing fake agents. Discover verified international healthcare vacancies, track your license &amp; ACLS expiries automatically, and check eligibility with AI — all in one app.</p>
-    <a class="cta-btn" href="https://play.google.com/store/apps/details?id=com.medicaura.global.app" target="_blank">Get it on Google Play</a>
-    <div class="sub-note">Download the official Android app for full job details, AI tools &amp; live alerts.</div>
+
+    <div>
+      <div class="coming-soon-badge">
+        <span class="coming-soon-dot"></span>
+        <span>Coming Soon on Google Play</span>
+      </div>
+    </div>
+
+    <div class="social-cta-group">
+      <a class="cta-btn btn-whatsapp" href="https://whatsapp.com/channel/0029Vb8qKRN5q08WTWpBsG1b" target="_blank" rel="noopener noreferrer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.15 1.6 5.95L0 24l6.33-1.66a11.87 11.87 0 0 0 5.72 1.46h.01c6.55 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.44-8.42zm-8.47 18.3h-.01a9.86 9.86 0 0 1-5.03-1.38l-.36-.21-3.76.99 1-3.66-.24-.38a9.85 9.85 0 0 1-1.51-5.24c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.13 1.03 7 2.9a9.82 9.82 0 0 1 2.9 7c0 5.45-4.44 9.87-9.89 9.87zm5.42-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35z"/></svg>
+        Join WhatsApp Channel
+      </a>
+      <a class="cta-btn btn-facebook" href="https://www.facebook.com/medicauraglobal" target="_blank" rel="noopener noreferrer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.597 1.323-1.326V1.326C24 .597 23.403 0 22.675 0z"/></svg>
+        Follow on Facebook
+      </a>
+    </div>
+    <div class="sub-note">Get daily international job updates &amp; instant notification when our Android app goes live.</div>
   </header>
 
   <section class="container">
@@ -84,10 +162,18 @@
 
     <div class="banner">
       <h2>Ready to Take Your Medical Career Global?</h2>
-      <p>Full job listings, AI eligibility checks, and live expiry notifications are exclusively available inside the MedicAura Global mobile app.</p>
-      <a class="cta-btn" href="https://play.google.com/store/apps/details?id=com.medicaura.global.app" target="_blank">Download on Google Play Store</a>
+      <p>The MedicAura Global Android app is launching soon on Google Play. Join our official WhatsApp Channel and Facebook Page for launch alerts and verified job updates.</p>
+      <div class="coming-soon-badge" style="margin-bottom:20px;">
+        <span class="coming-soon-dot"></span>
+        <span>Coming Soon on Google Play</span>
+      </div>
+      <div class="social-cta-group">
+        <a class="cta-btn btn-whatsapp" href="https://whatsapp.com/channel/0029Vb8qKRN5q08WTWpBsG1b" target="_blank" rel="noopener noreferrer">Join WhatsApp Channel</a>
+        <a class="cta-btn btn-facebook" href="https://www.facebook.com/medicauraglobal" target="_blank" rel="noopener noreferrer">Follow Facebook Page</a>
+      </div>
     </div>
   </section>
+
   <section style="max-width:1080px; margin:56px auto; padding:0 20px; text-align:center;">
     <h2 style="font-size:28px; color:#0f295c; margin-bottom:10px;">Inside MedicAura Global</h2>
     <p style="font-size:15px; color:#475569; margin-bottom:32px;">Explore verified international healthcare jobs, multilingual licensing guides, and your encrypted document vault.</p>
@@ -134,11 +220,13 @@
   </section>
 
   <footer>
-    <p style="margin-bottom: 10px;">&copy; 2026 MedicAura Global. All rights reserved.</p>
-    <div>
-      <a href="https://play.google.com/store/apps/details?id=com.medicaura.global.app" target="_blank">Google Play Store</a> |
+    <p style="margin-bottom: 6px;">&copy; 2026 MedicAura Global. All rights reserved.</p>
+    <span class="footer-status">Android App: Coming Soon on Google Play</span>
+    <div class="footer-links">
+      <a href="https://whatsapp.com/channel/0029Vb8qKRN5q08WTWpBsG1b" target="_blank" rel="noopener noreferrer">WhatsApp Channel</a>
+      <a href="https://www.facebook.com/medicauraglobal" target="_blank" rel="noopener noreferrer">Facebook Page</a>
       <a href="mailto:support@medicauraglobal.com">Contact Support</a>
-       | <a href="privacy.html">Privacy Policy</a>
+      <a href="privacy.html">Privacy Policy</a>
     </div>
   </footer>
 </body>
